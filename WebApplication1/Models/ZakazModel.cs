@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using WebApplication1.Entites;
 
+
 namespace WebApplication1.Models
 {
     public class ZakazModel
@@ -20,7 +21,7 @@ namespace WebApplication1.Models
         public string Users { get; set; }
         public string Nazvanie { get; set; }
         public string Zena { get; set; }
-        public string Image { get; set; }
+        public byte[] Image { get; set; }
 
     }
 }

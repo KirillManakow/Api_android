@@ -18,6 +18,6 @@ namespace WebApplication1.Entites
         public string Users { get; set; }
         public string Nazvanie { get; set; }
         public string Zena { get; set; }
-        public string Image { get; set; }
+        public byte[] Image { get; set; }
     }
 }
