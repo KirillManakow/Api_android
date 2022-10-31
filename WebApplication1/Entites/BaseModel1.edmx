@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="Хранилище Man_Sor_V_AModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="Хранилище Man_Sor_V_AModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <!--Ошибки, обнаруженные при создании:
 предупреждение 6002: В таблице или представлении "Man_Sor_V_A.dbo.Activ_user" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
         <EntityType Name="Activ_user">
@@ -419,7 +419,7 @@
           <Property Name="Users" Type="varchar(max)" Nullable="false" />
           <Property Name="Nazvanie" Type="varchar(max)" Nullable="false" />
           <Property Name="Zena" Type="varchar(max)" Nullable="false" />
-          <Property Name="Image" Type="varbinary(max)" />
+          <Property Name="Image" Type="varchar(max)" />
         </EntityType>
         <Association Name="FK_Users_Admin">
           <End Role="Admin" Type="Self.Admin" Multiplicity="0..1" />
@@ -676,7 +676,8 @@
             <End Role="Users" EntitySet="Users" />
           </AssociationSet>
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="Man_Sor_V_AModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -1054,7 +1055,7 @@
           <Property Name="Users" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Nazvanie" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Zena" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
         </EntityType>
         <Association Name="FK_Users_Admin">
           <End Role="Admin" Type="Self.Admin" Multiplicity="0..1" />
@@ -1068,7 +1069,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="Man_Sor_V_AEntities2" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="Man_Sor_V_AEntities3" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Admin" EntityType="Self.Admin" />
           <EntitySet Name="Activ_user" EntityType="Self.Activ_user" />
           <EntitySet Name="Blok_pitanie" EntityType="Self.Blok_pitanie" />
@@ -1101,7 +1102,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище Man_Sor_V_AModelContainer" CdmEntityContainer="Man_Sor_V_AEntities2">
+        <EntityContainerMapping StorageEntityContainer="Хранилище Man_Sor_V_AModelContainer" CdmEntityContainer="Man_Sor_V_AEntities3">
           <EntitySetMapping Name="Admin">
             <EntityTypeMapping TypeName="Man_Sor_V_AModel.Admin">
               <MappingFragment StoreEntitySet="Admin">

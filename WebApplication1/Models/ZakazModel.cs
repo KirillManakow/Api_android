@@ -21,7 +21,7 @@ namespace WebApplication1.Models
         public string Users { get; set; }
         public string Nazvanie { get; set; }
         public string Zena { get; set; }
-        public byte[] Image { get; set; }
+        public string Image { get; set; }
 
     }
 }

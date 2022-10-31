@@ -167,85 +167,90 @@
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Controllers\ZakazsController.cs" />
     <Compile Include="Entites\Activ_user.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
+      <DependentUpon>BaseModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entites\Admin.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entites\BaseModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BaseModel.Context.tt</DependentUpon>
+      <DependentUpon>BaseModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entites\BaseModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
       <DependentUpon>BaseModel.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
     </Compile>
-    <Compile Include="Entites\BaseModel.Designer.cs">
+    <Compile Include="Entites\BaseModel1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>BaseModel.edmx</DependentUpon>
+      <DependentUpon>BaseModel1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entites\BaseModel1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BaseModel1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entites\BaseModel1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BaseModel1.edmx</DependentUpon>
     </Compile>
     <Compile Include="Entites\Blok_pitanie.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
+      <DependentUpon>BaseModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entites\Kabeli.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
+      <DependentUpon>BaseModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entites\Klaviatyra.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
+      <DependentUpon>BaseModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entites\Korpusa.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
+      <DependentUpon>BaseModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entites\Kovriki.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
+      <DependentUpon>BaseModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entites\Mat_plat.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
+      <DependentUpon>BaseModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entites\Monitors.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
+      <DependentUpon>BaseModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entites\Mouse.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
+      <DependentUpon>BaseModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entites\Nayshniki.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
+      <DependentUpon>BaseModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entites\Notebok.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
+      <DependentUpon>BaseModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entites\Operativka.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
+      <DependentUpon>BaseModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entites\Oxladd.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
+      <DependentUpon>BaseModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entites\Procesor.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
+      <DependentUpon>BaseModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entites\Ssd_and_Hdd.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
+      <DependentUpon>BaseModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entites\sysdiagrams.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
+      <DependentUpon>BaseModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entites\Users.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
+      <DependentUpon>BaseModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entites\Veb_camera.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
+      <DependentUpon>BaseModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entites\Videocart.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
+      <DependentUpon>BaseModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entites\Vneshnie_nakopiteli.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
+      <DependentUpon>BaseModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entites\Zakaz.cs">
-      <DependentUpon>BaseModel.tt</DependentUpon>
+      <DependentUpon>BaseModel1.tt</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -259,15 +264,19 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Entites\BaseModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>BaseModel.Context.cs</LastGenOutput>
-      <DependentUpon>BaseModel.edmx</DependentUpon>
-    </Content>
     <Content Include="Entites\BaseModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BaseModel.edmx</DependentUpon>
       <LastGenOutput>BaseModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Entites\BaseModel1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BaseModel1.edmx</DependentUpon>
+      <LastGenOutput>BaseModel1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Entites\BaseModel1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BaseModel1.edmx</DependentUpon>
+      <LastGenOutput>BaseModel1.cs</LastGenOutput>
     </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -293,12 +302,12 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
-    <EntityDeploy Include="Entites\BaseModel.edmx">
+    <EntityDeploy Include="Entites\BaseModel1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>BaseModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>BaseModel1.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Entites\BaseModel.edmx.diagram">
-      <DependentUpon>BaseModel.edmx</DependentUpon>
+    <Content Include="Entites\BaseModel1.edmx.diagram">
+      <DependentUpon>BaseModel1.edmx</DependentUpon>
     </Content>
     <None Include="Properties\PublishProfiles\FTPProfile.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />

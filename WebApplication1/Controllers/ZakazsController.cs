@@ -15,7 +15,7 @@ namespace WebApplication1.Controllers
 {
     public class ZakazsController : ApiController
     {
-        private Man_Sor_V_AEntities2 db = new Man_Sor_V_AEntities2();
+        private Man_Sor_V_AEntities3 db = new Man_Sor_V_AEntities3();
 
         // GET: api/Zakazs
         [ResponseType(typeof(List<ZakazModel>))]
